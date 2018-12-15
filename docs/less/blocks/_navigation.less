@@ -6,47 +6,45 @@
 	z-index: 2;
 }
 
-a.navigation__logo {
-	display: block;
+.logo {
+	display: inline-block;
 	background-image: url("../img/frame-logo.svg");
 	background-repeat: no-repeat;
 	background-position: top left;
 	height: 45px;
 	width: 173px;
 	margin-top: 22px;
+	padding-top: 4px;
+	
 	text-align: center;
 	color: @gray;
-}
-
-.navigation__logo-text {
-	display: inline-block;
 	font-family: 'Raleway';
 	font-weight: 300;
 	font-size: 26px;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
-	padding-top: 4px;
 
-	span {
-		font-weight: bold;
+	&:hover {
+		text-decoration: none;
+		color: @gray;
 	}
 }
 
-.navigation__list {
+.navigation-list {
 	margin: 0;
 	margin-left: 35px;
 	padding: 0;
 	list-style-type: none;
 	font-size: 0;
 	display: inline-block;
-	
-	li {
-		margin: 0;
-		padding: 0;
-		display: inline-block;
-		font-size: 18px;
-	}
+}
 
+.navigation-list__item {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	font-size: 18px;
+	
 	a {
 		display: block;
 		color: #3C3C3C;
@@ -60,12 +58,15 @@ a.navigation__logo {
 	}
 }
 
-.navigation__social-icons {
+
+
+
+.social-icons {
 	display: inline-block;
 	margin-left: 17px;
 }
 
-.navigation__social-icons-item {
+.social-icons__item {
 	display: inline-block;
 	margin-right: 10px;
 	-webkit-border-radius: 50px;

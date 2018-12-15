@@ -1,10 +1,10 @@
-.slider {
+.top-slider {
 	height: 840px;
 	background-color: #B8B8B8;
 }
 
-.slider__bg {
-	background-image: url("../img/bg/bg-sliders-1.jpg");
+.slide {
+	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
@@ -12,13 +12,10 @@
 	        background-size: cover;
 	height: 840px;
 	padding-top: 625px;
-	
-	&--slide-2 {
-		background-image: url("../img/bg/bg-sliders-2.jpg");
-	}
 }
 
-.slider__title {
+
+.slide__title {
 	margin: 0;
 	margin-bottom: 30px;
 	font-size: 48px;
@@ -28,22 +25,25 @@
 	text-align: center;
 }
 
-.slider__price {
+.slide-desc {
 	text-align: center;
 	font-size: 0;
 }
 
-.slider__price-item {
+.slide-desc__price {
 	display: inline-block;
 	margin-right: 35px;
+	vertical-align: middle;
+	
 	font-family: 'Helvetica';
 	font-size: 36px;
 	line-height: 1;
 	color: #FFF;
 	font-weight: 300;
 }
-.slider__price-button {
+.slide-desc__button {
 	display: inline-block;
+	vertical-align: middle;
 	background-color: rgba(255, 255, 255, 0.2);
 	padding: 11px 12px;
 	-webkit-border-radius: 3px;
