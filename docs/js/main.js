@@ -9,5 +9,21 @@ $(document).ready(function() {
 			slideSpeed : 600
 		});
 
+		$("#agents-slider").owlCarousel({
+			singleItem : true,
+			navigation: false,
+			theme: "agents-slider-theme",
+			navigationText : ["",""],
+			slideSpeed : 600
+		});
+
+		$("#testimonials-slider").owlCarousel({
+			singleItem : true,
+			navigation: true,
+			theme: "testimonials-slider-theme",
+			navigationText : ["",""],
+			slideSpeed : 600
+		});
+
 	
 });

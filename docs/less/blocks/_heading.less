@@ -1,0 +1,50 @@
+.heading {
+	position: relative;
+	margin-bottom: 35px;
+	padding-bottom: 29px;
+	font-family: 'Raleway';
+	font-size: 45px;
+	font-weight: 300;
+	color: @gray;
+	text-align: center;
+	span {
+		font-weight: 500;
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		background-color: #E2574C;
+		height: 3px;
+		width: 110px;
+		-webkit-border-radius: 1.5px;
+		        border-radius: 1.5px;
+		right: 50%;
+		bottom: 0;
+		-webkit-transform: translate(50%);
+		   -moz-transform: translate(50%);
+		    -ms-transform: translate(50%);
+		     -o-transform: translate(50%);
+		        transform: translate(50%);
+	}
+
+	&--agent-slider {
+		text-align: left;
+		
+		&:after {
+			right: 0;
+			left: 0;
+			-webkit-transform: translate(0);
+		   -moz-transform: translate(0);
+		    -ms-transform: translate(0);
+		     -o-transform: translate(0);
+		        transform: translate(0);
+		}
+	}
+
+	&--testimonials-slider {
+		font-weight: 500;
+		color: #FFF;
+		margin-bottom: 43px;
+	}
+}

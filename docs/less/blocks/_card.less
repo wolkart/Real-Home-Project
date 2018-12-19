@@ -1,0 +1,89 @@
+.card {
+    margin-bottom: 29px;
+    background-color: #FFF;
+	border: 1px solid #e6e6e6;
+	-webkit-border-radius: 3px;
+	        border-radius: 3px;
+    text-align: center;
+}
+
+.card__img {
+	height: 242px;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+.card-desc {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.card-desc__name {
+	margin-bottom: 3px;
+	font-family: 'Raleway';
+	font-size: 22px;
+	font-weight: 500;
+	color: @gray;
+}
+
+.card-desc__location {
+	margin-bottom: 15px;
+	font-size: 15px;
+	color: #797979;
+}
+
+.card-desc__price {
+	font-family: 'Proxima Nova Rg';
+	font-size: 16px;
+	font-weight: normal;
+	color: #E2574C;
+	text-transform: uppercase;
+}
+
+.card-charact {
+	margin: 0;
+	padding: 13px 0;
+	list-style-type: none;
+	border-top: 1px solid #e6e6e6;
+	font-size: 0;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.card-charact__item {
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	
+	font-family: 'Proxima Nova Rg';
+	font-weight: normal;
+	font-size: 13px;
+	color: #797979;
+	
+	&:after {
+		content: "";
+		display: inline-block;
+		height: 5px;
+		width: 5px;
+		margin-left: 12px;
+		margin-right: 12px;
+		
+		background-color: #C0C0C0;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:last-child:after {
+		display: none;
+	}
+}
