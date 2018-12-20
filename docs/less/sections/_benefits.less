@@ -4,12 +4,40 @@
 	background: -webkit-linear-gradient(top, #f9f9f9 0%,#fafafa 4%,#fbfbfb 8%,#fcfcfc 17%,#fcfcfc 34%,#fefefe 49%,#ffffff 100%);
 	background: linear-gradient(to bottom, #f9f9f9 0%,#fafafa 4%,#fbfbfb 8%,#fcfcfc 17%,#fcfcfc 34%,#fefefe 49%,#ffffff 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ffffff',GradientType=0 );
-	padding-top: 100px;
-	padding-bottom: 100px;
+	
+	padding-top: 50px;
+	
+	@media (min-width: 768px) {
+		padding-top: 80px;
+		padding-bottom: 40px;
+	}
+	
+	@media (min-width: 1200px) {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
 }
 
 .benefits-block {
 	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 50px;
+	
+	@media (min-width: 768px) {
+		padding: 0 36px;
+		margin-bottom: 40px;
+	}
+	
+	@media (min-width: 992px) {
+		padding: 0 91px;
+		margin-bottom: 40px;
+	}
+
+	@media (min-width: 1200px) {
+		padding: 0;
+		margin-bottom: 0;
+	}
 }
 
 .benefits-block__icon {

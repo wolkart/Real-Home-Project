@@ -1,10 +1,17 @@
 .card {
+	margin-left: auto;
+	margin-right: auto;
     margin-bottom: 29px;
     background-color: #FFF;
 	border: 1px solid #e6e6e6;
 	-webkit-border-radius: 3px;
 	        border-radius: 3px;
     text-align: center;
+    max-width: 362px;
+    
+    @media (min-width: 768px) {
+    	width: 100%;
+    }
 }
 
 .card__img {

@@ -10,7 +10,7 @@
 /* Styling Next and Prev buttons */
 
 .testimonials-slider-theme .owl-controls .owl-buttons div{
-	display: block;
+	display: none;
 	position: absolute;
 	background-repeat: no-repeat;
 	background-position: top left;
@@ -21,6 +21,10 @@
 	
 	&:hover {
 		opacity: 0.5;
+	}
+
+	@media (min-width: 768px) {
+		display: block;
 	}
 }
 //  Clickable class fix problem with hover on touch devices 
@@ -47,15 +51,21 @@
 }
 .testimonials-slider-theme .owl-controls .owl-page span{
 	display: block;
-	width: 15px;
-	height: 15px;
-	margin: 5px 7px;
+	width: 12px;
+	height: 12px;
+	margin: 3px 5px;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
 	border: 2px solid #fff;
   	opacity: 0.7;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
 	border-radius: 30px;
+	
+	@media (min-width: 768px) {
+		width: 15px;
+		height: 15px;
+		margin: 5px 7px;
+	}
 }
 
 .testimonials-slider-theme .owl-controls .owl-page.active span,

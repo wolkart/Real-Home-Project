@@ -1,5 +1,9 @@
 .agents-slider {
-	padding-top: 90px;
+	padding-top: 50px;
+	
+	@media (min-width: 992px) {
+		padding-top: 90px;
+	}
 }
 
 .agent-photo {
@@ -12,12 +16,12 @@
 }
 
 .agent-desc {
-
+	margin-bottom: 50px;
+	padding-top: 124px;
 }
 
 .agent-desc__name {
 	margin-bottom: 25px;
-	
 	font-size: 25px;
 	font-weight: bold;
 	color: @gray;
@@ -25,20 +29,27 @@
 
 .agent-desc__text {
 	margin-bottom: 25px;
-	
 	font-size: 16px;
 	line-height: 27px;
 	color: #797979;
 	p {
 		margin: 0;
+		padding-right: 20px;
+	}
+
+	@media (min-width: 1200px) {
+		p {
+			padding-right: 87px;
+		}
 	}
 }
 
 .agent-desc__phone {
+	display: block;
 	font-size: 16px;
 	text-decoration: none;
 	color: @gray;
-	margin-right: 28px;
+	margin-bottom: 15px;
 	
 	-webkit-transition: 0.3s ease-in;
 	   -moz-transition: 0.3s ease-in;
@@ -61,6 +72,12 @@
 		width: 15px;
 		margin-right: 10px;
 		vertical-align: middle;
+	}
+
+	@media (min-width: 768px) {
+		display: inline-block;
+		margin-right: 28px;
+		margin-bottom: 0;
 	}
 }
 

@@ -1,8 +1,12 @@
 .footer {
 	background-color: #303030;
-	padding-top: 80px;
+	padding-top: 40px;
 	padding-bottom: 65px;
 	color: #FFF;
+	
+	@media (min-width: 992px) {
+		padding-top: 80px;
+	}
 }
 
 .footer__title {
@@ -14,8 +18,13 @@
 
 .footer-nav {
 	margin: 0;
+	margin-bottom: 45px;
 	padding: 0;
 	list-style-type: none;
+	
+	@media (min-width: 768px) {
+		margin-bottom: 0;
+	}
 }
 
 .footer-nav__item {
@@ -35,7 +44,7 @@
 	
 	&:hover, &:active, &:focus {
 		text-decoration: none;
-		color: #7b7b7b;
+		color: #E2574C;
 	}
 }
 

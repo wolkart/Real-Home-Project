@@ -5,16 +5,29 @@
 }
 
 .about-content {
-	display: flex;
-	-webkit-justify-content: space-between;
-	justify-content: space-between;
+	@media (min-width: 768px) {
+		display: flex;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-webkit-align-items: center;
+		align-items: center;
+	}    
 }
 
 .about-content__text {
+	margin-bottom: 20px;
 	font-family: 'Raleway';
 	font-weight: 300;
-	font-size: 37px;
+	font-size: 27px;
 	span {
 		font-weight: bold;
+	}
+
+	@media (min-width: 768px) {
+		margin-bottom: 0;
+	}
+
+	@media (min-width: 992px) {
+		font-size: 37px;
 	}
 }
