@@ -224,7 +224,7 @@ p {
   }
 }
 .top-slider {
-  height: 300px;
+  height: 450px;
   margin-top: 87px;
   background-color: #B8B8B8;
 }
@@ -250,8 +250,8 @@ p {
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 300px;
-  padding-top: 90px;
+  height: 450px;
+  padding-top: 230px;
 }
 @media (min-width: 768px) {
   .slide {
